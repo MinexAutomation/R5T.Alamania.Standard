@@ -1,0 +1,2 @@
+# R5T.Alamania.Standard
+The standard IRivetOrganizationDirectoryPathProvider implementation aggregation library for the Alamania project.
