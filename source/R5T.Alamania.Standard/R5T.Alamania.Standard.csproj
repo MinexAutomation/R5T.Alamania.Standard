@@ -4,4 +4,9 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>1701;1702;1591;1573</NoWarn>
   </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\R5T.Alamania.Bulgaria\source\R5T.Alamania.Bulgaria\R5T.Alamania.Bulgaria.csproj" />
+    <ProjectReference Include="..\..\..\R5T.Bulgaria.UserProfileDirectory\source\R5T.Bulgaria.UserProfileDirectory\R5T.Bulgaria.UserProfileDirectory.csproj" />
+    <ProjectReference Include="..\..\..\R5T.Costobocia.Standard\source\R5T.Costobocia.Standard\R5T.Costobocia.Standard.csproj" />
+  </ItemGroup>
 </Project>
