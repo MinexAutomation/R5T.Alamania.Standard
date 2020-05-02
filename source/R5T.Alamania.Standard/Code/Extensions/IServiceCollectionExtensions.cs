@@ -28,6 +28,17 @@ namespace R5T.Alamania.Standard
         /// <summary>
         /// Adds the <see cref="IRivetOrganizationDirectoryPathProvider"/> service.
         /// </summary>
+        public static IServiceCollection AddRivetOrganizationDirectoryPathProvider<TRivetOrganizationDirectoryPathProvider>(this IServiceCollection services)
+            where TRivetOrganizationDirectoryPathProvider: IRivetOrganizationDirectoryPathProvider
+        {
+            services.AddRivetOrganizationDirectoryPathProvider();
+
+            return services;
+        }
+
+        /// <summary>
+        /// Adds the <see cref="IRivetOrganizationDirectoryPathProvider"/> service.
+        /// </summary>
         public static ServiceAction<IRivetOrganizationDirectoryPathProvider> AddRivetOrganizationDirectoryPathProviderAction(this IServiceCollection services)
         {
             var serviceAction = new ServiceAction<IRivetOrganizationDirectoryPathProvider>(() => services.AddRivetOrganizationDirectoryPathProvider());
