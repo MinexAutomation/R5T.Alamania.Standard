@@ -18,7 +18,7 @@ namespace R5T.Alamania.Standard
         /// </summary>
         public static IServiceCollection AddRivetOrganizationDirectoryPathProvider(this IServiceCollection services)
         {
-            services.AddBulgariaRivetOrganizationDirectoryPathProvider(
+            services.AddRivetOrganizationDirectoryPathProvider(
                 services.AddDropboxDirectoryPathProviderAction(),
                 services.AddOrganizationStringlyTypedPathOperatorAction());
 
